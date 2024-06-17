@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-export default createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
 *{
    
  body {
@@ -10,7 +10,7 @@ export default createGlobalStyle`
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: black;
+    background-color: #7F260F;
     color: white;
   }
   
