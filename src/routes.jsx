@@ -4,14 +4,14 @@ import {
   Route,
   createRoutesFromElements,
 } from "react-router-dom";
-import { AppLayout } from "./components";
-import { Home, Cadastro } from "./pages";
+import AppLayout from "./Components/Layout/Layout";
+import { Cadastro } from "./Pages/Cadastro/Cadastro";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
       <Route path='/' element={<AppLayout />}>
-        <Route index element={<Home />} />
-        <Route path='teste' element={<Cadastro />} />
+        <Route index element={<Cadastro />} />
+        <Route path='cadastro' element={<Cadastro />} />
       </Route>
     </Route>
   )

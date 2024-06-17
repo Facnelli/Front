@@ -1,10 +1,11 @@
 import { HeaderStyle } from "./style";
-import logoHeader from "./logoHeader.svg";
+
+import image from "./image.png";
 
 export function Header() {
   return (
     <HeaderStyle>
-      <img className='logoHeader' src={logoHeader} alt='logo' />
+      <img style={{ width: " 60px", height: "auto" }} src={image} alt='logo' />
     </HeaderStyle>
   );
 }
