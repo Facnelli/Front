@@ -4,14 +4,15 @@ import {
   Route,
   createRoutesFromElements,
 } from "react-router-dom";
-import AppLayout from "./Components/Layout/Layout";
-import { Cadastro } from "./Pages/Cadastro/Cadastro";
+import AppLayout from "./Layout/Layout";
+import { Events } from "./Pages/Events/Events";
+import App from "./App";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
-      <Route path='/' element={<AppLayout />}>
-        <Route index element={<Cadastro />} />
-        <Route path='cadastro' element={<Cadastro />} />
+      <Route path='/' element={<App />}>
+        <Route index element={<Events />} />
+        <Route path='Eventos' element={<Events />} />
       </Route>
     </Route>
   )

@@ -1,11 +1,15 @@
-import { HeaderStyle } from "./style";
+import { HeaderButton, HeaderStyle } from "./Style";
 
-import image from "./image.png";
+import logoHeader from "../../Assets/logoHeader.png";
 
 export function Header() {
   return (
     <HeaderStyle>
-      <img style={{ width: " 60px", height: "auto" }} src={image} alt='logo' />
+      <img style={{ width: " 60px", height: "auto" }} src={logoHeader} alt='logo' />
+      <div>
+        <HeaderButton>Home</HeaderButton>
+        <HeaderButton>Eventos</HeaderButton>
+      </div>
     </HeaderStyle>
   );
 }
